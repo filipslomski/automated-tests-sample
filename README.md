@@ -1,1 +1,5 @@
 # automated-tests
+
+Setup:
+
+Run:

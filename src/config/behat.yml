@@ -1,0 +1,12 @@
+# behat.yml
+default:
+    autoload: [ %paths.base%/../Contexts ]
+    formatters:
+        pretty: true
+    suites:
+        core:
+            filters:
+              tags: "@coretest"
+            paths: [ %paths.base%/../Features ]
+            contexts:
+                - src\Contexts\LoginContext

@@ -1,21 +1,18 @@
-@checkout
+@checkout @coretest
 Feature: Checkout
   As a user of application
   I want to be able to checkout successfully
 
-  @coretest
-  Scenario:
+  Scenario: Check if providers are visible
     Given I am on checkout page
     Then I should see following payment providers:
-    | mint | |
+    | mint | vtctelcocard |
 
-  Scenario:
-    Given I am on checkout page
-    When I select mint provider
+  Scenario: Check if mint epin code input is visible
+    Given I am on checkout mint provider page
     Then I should see epin code input
 
-  Scenario:
-    Given I am on checkout page
-    When I select mint provider
-    And  I enter incorrect e-pin
+  Scenario: Check if incorrect epin code results in aprropriate error message
+    Given I am on checkout mint provider page
+    When  I enter incorrect e-pin
     Then I should see proper error message

@@ -1,12 +1,16 @@
 # behat.yml
 default:
-    autoload: [ %paths.base%/../Contexts ]
+    autoload:
+        - %paths.base%/../
     formatters:
         pretty: true
     suites:
         core:
             filters:
               tags: "@coretest"
-            paths: [ %paths.base%/../Features ]
+            paths:
+                - %paths.base%/../Features
             contexts:
-                - src\Contexts\LoginContext
+                - myTests\Contexts\LoginContext
+                - myTests\Contexts\CheckoutContext
+                - myTests\Contexts\BaseContext

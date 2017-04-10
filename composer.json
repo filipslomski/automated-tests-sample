@@ -3,5 +3,10 @@
     "phpunit/phpunit": "*",
     "facebook/webdriver": "dev-master",
     "behat/behat": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "myTests\\": "src/"
+    }
   }
 }

@@ -6,4 +6,5 @@ Feature: Google
   Scenario: Search in google
     Given I am on the google page
     When I search for phrase filip slomski in google
-    Then I should see correct google results
+    And I select phrase filip slomski photography from suggestion listbox
+    Then I should see over 1000 results

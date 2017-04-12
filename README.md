@@ -1,4 +1,4 @@
-# automated-tests
+# automated-tests-sample
 
 Prerequisites:  
 PHP 7(can be lower) and composer installed  

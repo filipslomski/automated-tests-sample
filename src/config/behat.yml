@@ -11,6 +11,4 @@ default:
             paths:
                 - %paths.base%/../Features
             contexts:
-                - myTests\Contexts\LoginContext
-                - myTests\Contexts\CheckoutContext
-                - myTests\Contexts\BaseContext
+                - myTests\Contexts\GoogleContext
